@@ -1,9 +1,6 @@
 import React from 'react'
 
-import Button from '../../common/button/Button';
 import styles from './LatestProjects.module.css'
-
-import giftyScreen from '../../../img/projects/gifty.png';
 
 const latestProjects = (props) => {
     return (

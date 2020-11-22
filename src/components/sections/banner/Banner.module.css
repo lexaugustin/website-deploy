@@ -3,7 +3,7 @@
     position: relative;
     transform: skew(0deg, -6deg);
     overflow: hidden;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #b6c3f7;
 }
 
 #banner-content {
