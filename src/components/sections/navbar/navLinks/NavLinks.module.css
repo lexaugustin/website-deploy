@@ -1,0 +1,44 @@
+#navSections {
+    padding: 0;
+    margin: 8px auto;
+    list-style: none;
+}
+
+#navSections li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+#navSections li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#navSections li a:hover,
+#navSections li a:active,
+#navSections li a.active {
+    color: #103EF6;
+}
+
+#resumeButton a {
+    text-decoration: none;
+}
+
+#resumeButton:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 959px) {
+    #navSections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navSections li {
+        margin: 8% 0;
+    }
+
+    #navSections #resumeButton {
+        margin-top: 28%;
+    }
+}

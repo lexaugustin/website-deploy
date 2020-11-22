@@ -1,0 +1,20 @@
+#content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#socialIcons {
+    text-align: center
+}
+
+#socialIcons li {
+    margin-left: 16px; 
+}
+
+#picture {
+    margin-top: 100px;
+    margin-right: 3%;
+    position: relative;
+    width: 75%;
+    max-width: 350px;
+}
