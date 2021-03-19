@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import logo from '../../../img/logo/logo-bleu.svg'
+
 import NavSections from './navLinks/NavLinks';
 import NavMobile from './navMobile/NavMobile';
 
@@ -31,6 +33,7 @@ export default class Navbar extends Component {
         }
     }
 
+    // -------- Navbar Scrolling --------
     componentDidMount() {
         window.addEventListener('scroll', () => {
             const isTop = window.scrollY < 100;
@@ -48,7 +51,7 @@ export default class Navbar extends Component {
             <div>
 
                 <div id={styles.navbar} className={styles[this.state.navClassName]}>
-                    <a href='\'><img src="https://lexaugustin.github.io/img/logo/logo-bleu.svg"/></a>
+                    <a href='\'><img src={logo}/></a>
                     <div><NavSections/></div>
                 </div>
 

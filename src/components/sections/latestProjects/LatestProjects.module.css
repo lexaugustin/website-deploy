@@ -20,7 +20,7 @@
 
 .screen img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     margin: 16px auto;
 }
 
@@ -75,8 +75,8 @@
     }
     
     .screen {
-        width: 45%;
-        max-width: 450px;
+        width: 40%;
+        max-width: 420px;
         margin-right: 5%;
     }
 }

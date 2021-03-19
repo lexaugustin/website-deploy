@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Spring } from 'react-spring/renderprops'
 import { Transition } from 'react-spring/renderprops'
-import portrait from '../../../img/banner/portrait.png'
+
+import portrait3 from '../../../img/banner/all3.png'
 import Button from '../../common/button/Button';
 
 import styles from './Banner.module.css'
@@ -22,11 +23,19 @@ const banner = () => {
                     >
                         {props => (
                             <div style={props}>
-                                <img src={portrait} alt=""/>
+                                <img src={portrait3} alt=""/>
                             </div>
                         )}
 
                     </Spring>
+
+                    {/* <Transition
+                        items={on}
+                        from={{ opacity: 0 }}
+                        enter={{ opacity: 1 }}
+                        leave={{ opacity: 0 }}>
+                        {on => on && (props => <div style={props}>✌️</div>)}
+                    </Transition> */}
                 </div>
 
                 
@@ -40,6 +49,11 @@ const banner = () => {
                         {props => (
                             <div style={props}>
                                 <div id={styles['text-side-content']}>
+                                    <h2>Computer Engineering Student<span> at The University of Florida</span></h2>
+                                    <div id={styles.bar}></div>
+                                    <p>With Interests in Web Development, Mobile Development, UI/UX Design and Machine Learning.</p>
+
+                                    {/* <div id={styles.contact__button}><Button>Contact</Button></div> */}
                                 </div>
                             </div>
                         )}

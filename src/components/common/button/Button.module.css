@@ -1,25 +1,12 @@
 #button {
-    padding: 8px 32px;
-    text-decoration: none;
-    background-color: transparent;
-    border: 1px solid #103EF6;
-    border-radius: 12px;
-    color: #103EF6; 
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-#button:hover {
-    background-color: rgb(240, 243, 255);
-}
-
-#button:active {
-    background-color: rgb(215, 223, 255);
-}
-
-#button::after {
-    content: "";
-    height: 100%;
-    width: 100%;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
 }

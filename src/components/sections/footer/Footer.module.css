@@ -1,3 +1,7 @@
+/* ====================================
+TOP
+======================================= */
+
 #contact {
     grid-area: contact;
 }
@@ -36,6 +40,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "contact menu academic";
+    /* width: 100%; */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -54,11 +59,20 @@
     text-decoration: none;
 }
 
+/* ====================================
+DIVIDER
+======================================= */
+
 #footer hr {
     max-width: 1200px;
     margin-top: 48px;
     opacity: 0.2;
 }
+
+
+/* ====================================
+BOTTOM
+======================================= */
 
 #bottom {
     max-width: 1200px;
@@ -83,11 +97,16 @@
     40% {ransform: scale(1.2)}
 }
 
+
+/* ====================================
+MEDIA QUERRIES
+======================================= */
+
 @media (max-width: 999px) {
     #top {
         display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
         "contact . menu"
         "academic academic academic";
@@ -105,7 +124,7 @@
 @media (max-width: 449px) {
     #top {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
         "contact"

@@ -2,6 +2,6 @@ import React from 'react';
 
 import styles from './Button.module.css';
 
-const button = (props) => <a id={styles.button} href={props.link} target="_blank">{props.children}</a>
+const button = (props) => <a href={props.link}><button id={styles.button}>{props.children}</button></a>
 
 export default button;

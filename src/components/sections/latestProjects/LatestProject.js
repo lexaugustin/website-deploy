@@ -1,14 +1,41 @@
 import React from 'react'
 
+import todayScreenshot from '../../../img/projects/today-screen.png'
+
+import Button from '../../common/button/Button';
 import styles from './LatestProjects.module.css'
+
+import giftyScreen from '../../../img/projects/gifty.png';
 
 const latestProjects = (props) => {
     return (
         <div>
+            {/* <div className={styles.content}>
+                <div className={styles.details}>
+                    <div className={styles.title}>
+                        <p className={styles.title}><i className='fas fa-gift'></i><span>Gifty (Tentative Name)</span></p>
+                    </div>
+
+                    <p className={styles.intro}>Making it easier to help your favorite charity organizations</p>
+
+                    <div className={styles.description}>
+                        <p> Donation mobile application that facilitates charity organizations’ funding needs. 
+                            The company adds Items, or funding amount needed, in order for users to pay for them directly 
+                            through the app, and including the corresponding shipping and logistics.
+                        </p>
+                    </div>
+                </div>
+
+                <div className={styles.screen}>
+                    <img src={giftyScreen} alt="Gifty Screenshots"/>
+                </div>
+            </div> */}
+
+
 
             <div id={styles.gifty} className={styles.content}>
                 <div className={styles.screen}>
-                    <img src='https://lexaugustin.github.io/img/projects/today/today-screen.png' alt="Today Screenshot"/>
+                    <img src={todayScreenshot} alt="Today Screenshot"/>
                 </div>
                 <div className={styles.details}>
                     <div className={styles.title}>
@@ -29,6 +56,10 @@ const latestProjects = (props) => {
                     </div>
 
                     <div className={styles.links}>
+                        {/* <a href="google.com" target="_blank">
+                            <p>See More<i className="fas fa-long-arrow-alt-right"></i></p>
+                        </a> */}
+
                         <a href="https://github.com/lexaugustin/today" target="_blank">
                             <p className={styles.igithub}>Github<i className="fab fa-github-alt"></i></p>
                         </a>

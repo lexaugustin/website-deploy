@@ -5,7 +5,10 @@ import Header from './components/common/header/Header'
 
 import Navbar from './components/sections/navbar/Navbar'
 import Banner from './components/sections/banner/Banner'
+import About from './components/sections/about/About'
 import LatestProjects from './components/sections/latestProjects/LatestProject'
+import MoreProjects from './components/sections/moreProjects/MoreProjects'
+import Career from './components/sections/career/Career'
 import Contact from './components/sections/contact/Contact'
 import Footer from './components/sections/footer/Footer'
 
@@ -28,6 +31,14 @@ class App extends Component {
       loading: false
     })
   }
+
+  // componentDidMount() {
+  //   setTimeout( () => {
+  //     this.setState({
+  //       loading: false
+  //     })
+  //   }, 2000)
+  // }
   
   render() {
 
@@ -51,7 +62,22 @@ class App extends Component {
             <section id="banner">
               <Banner/>
             </section>
-  
+    
+    
+            {/* ---------------- ABOUT ---------------- */}
+            <section id='about'>
+              <div id="header">
+                <Header
+                  icon = {aboutIcon} 
+                  title = "About" 
+                  subtitle = "A little bit about myself, including my interests and favorite things to do" 
+                />
+              </div>
+    
+              <div id='main'>
+                <About/>
+              </div>
+            </section>
     
     
             {/* ----------- LATEST PROJECTS ----------- */}
@@ -66,6 +92,38 @@ class App extends Component {
     
               <div id='main'>
                 <LatestProjects/>
+              </div>
+            </section>
+    
+    
+            {/* ------------ MORE PROJECTS ------------ */}
+            <section id='more-projects'>
+              <div id="header">
+                <Header
+                  icon = {contactIcon} 
+                  title = "More Notable Projects" 
+                  subtitle = "Some of the most notable projects that I have worked on" 
+                />
+              </div>
+    
+              <div id='main'>
+                <MoreProjects/>
+              </div>
+            </section>
+    
+    
+            {/* -------------- EXPERIENCE -------------- */}
+            <section id='career'>
+              <div id="header">
+                <Header
+                  icon = {contactIcon} 
+                  title = "Interests & Experience" 
+                  subtitle = "My areas of interests and acquired skills" 
+                />
+              </div>
+    
+              <div id='main'>
+                <Career/>
               </div>
             </section>
     
