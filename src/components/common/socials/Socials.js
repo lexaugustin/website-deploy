@@ -20,12 +20,7 @@ const socialIcons = [
         name:'instagram', 
         icon: 'fab fa-instagram', 
         link:'https://www.instagram.com/lexaugustin/'
-    },
-    {
-        name:'twitter', 
-        icon: 'fab fa-twitter', 
-        link:'https://twitter.com/lexaugustin'
-    },
+    }
 ]
 
 const socials = (props) => {

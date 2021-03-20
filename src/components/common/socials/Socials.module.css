@@ -41,18 +41,6 @@
     background-color: #FF6547;
 }
 
-/* Twitter */
-.icons li:nth-child(4) a {
-    color: #64BCFF;
-    border: 2px solid #64BCFF;
-    background-color: rgba(100,188,255,0.10);
-}
-.icons li:nth-child(4) a:hover {
-    color: #FFF;
-    background-color: #64BCFF; 
-}
-
-
 @media (max-width: 959px) {
     .icons li {
         margin: 0 8px;
