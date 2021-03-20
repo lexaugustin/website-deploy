@@ -3,6 +3,8 @@ import React from 'react';
 import { Spring } from 'react-spring/renderprops'
 import { Transition } from 'react-spring/renderprops'
 
+import portrait from '../../../img/banner/all.png'
+import portrait2 from '../../../img/banner/all2.png'
 import portrait3 from '../../../img/banner/all3.png'
 import Button from '../../common/button/Button';
 

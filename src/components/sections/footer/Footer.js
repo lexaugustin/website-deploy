@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Socials from '../../common/socials/Socials'
+import logo from '../../../img/logo/logo-white.svg'
 
 import styles from './Footer.module.css'
 
@@ -12,7 +13,7 @@ const footer = () => {
             <div id={styles.top}>
                 
                 <div id={styles.contact}>
-                    <img id={styles.logo} src="https://lexaugustin.github.io/img/logo/logo-white.svg"/>
+                    <img id={styles.logo} src={logo}/>
                     <p>lexaugustin@gmail.com</p>
                     {/* <div id={styles.socialIcons}><Socials/></div> */}
                 </div>
